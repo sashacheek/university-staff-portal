@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, h1 {
+    background-color: rgb(26, 22, 95);
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+h1, footer {
+    text-align: center;
+    /* background-color:rgb(154, 247, 236); */
+    padding: 2em;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+    box-shadow: 4px 6px 6px rgb(13, 7, 40);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 60%;
+}
+
+.staff-forms {
+    margin: 0 auto;
+    padding: 3vw;
+    /* background-color: lightblue; */
+    display: table;
+    height: min-content;
+    align-self: center;
+    /* box-shadow: 4px 6px 6px grey; */
+}
+
+.staff-forms div {
+    display: table-row;
+    margin: 10px auto;
+    /* width: 5rem; */
+}
+
+.staff-forms input, .staff-forms label {
+    display: table-cell;
+}
+
+.staff-forms label {
+    text-align: left;
+    display: block;
+    font-size: 1rem;
+    padding: 10px 10px 0px 0px;
+}
+
+.staff-forms input {
+    text-align: left;
+    box-sizing:border-box;
+}
+
+.login-top {
+    background-color: rgb(154, 247, 236);
+    /* height: 70px; */
+    text-align: center;
+    display: flex;
+    height: auto;
+    /* justify-self: stretch;
+    /* align-self: stretch; */
+    /* display: inline-block; */
+}
+
+.login-top h2 {
+    margin: -9px auto 0;
+    align-self: center;
+    text-align: center;
+    font-size: 4em;
+}
+
+.button {
+    background-color: rgb(220, 255, 250);
+    border-radius: 2px;
+    border: 2px solid rgb(37, 159, 184);
+    margin: 0px 5px 5px 0px;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.button:hover {
+    background-color: rgb(185, 241, 233);
+}
+
+.button:active {
+    border: 2px solid rgb(18, 130, 152);
+    background-color: rgb(150, 235, 222);
+}
+
+h1, h2, h3, h4, h5, h6, .button, .dept-label {
+    font-family: 'Patrick Hand', cursive;
+    color: rgb(7, 22, 122);
+}
+
+h1, p, label {
+    color: white;
+}
+
+h1 {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+p, label {
+    font-family: 'Glass Antiqua', cursive;
+}
+
+.message {
+    color: rgb(255, 99, 99);
+}
+
+/* Dashboard */
+.dash-wrapper {
+    width: 80%;
+    background-color:white;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.dept-entry {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    /* padding: 5px; */
+}
+
+.hidden {
+    display: none;
+}
+
+.dept-entry-button, .dept-entry h3 {
+    display: inline-block;
+}
+
+.departments, .staff {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.deptheading {
+    text-align: center;
+    padding: 10px;
+}
+
+.staff h3 {
+    padding: 5px;
+}
+
+/* Register */
+
+.error {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Departments */
+
+.dept-label {
+    font-weight: bold;
+    padding: 5px;
+}
+
+#update-button {
+    margin: 5px auto;
+    justify-self: center;
+    float: right;
+}
+
+@media screen and (max-width:500px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0px auto;
+        height: 70%;
+    }
+
+    /* header {
+        padding: h;
+    } */
+
+}
